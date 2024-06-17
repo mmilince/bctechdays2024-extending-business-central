@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "f23e9553-3bc5-4d2a-982e-f144df497beb",
+		"name": "Webhooks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5384484"
+	},
+	"item": [
+		{
+			"name": "Subscriptions GET",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/subscriptions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscriptions POST",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"notificationUrl\": \"notification url\",\r\n  \"resource\": \"https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)/salesOrders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/subscriptions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/companies",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Available webhooks",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCIsImtpZCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5LyIsImlhdCI6MTcxODExMzgzOCwibmJmIjoxNzE4MTEzODM4LCJleHAiOjE3MTgxMTc3MzgsImFpbyI6IkUyZGdZRGpjbWJwVmhjMzNadlRSbE9rYkEyTzdBQT09IiwiYXBwaWQiOiJhZDg5MmZjZC1iZmNiLTQyNDMtOTUwZS04ZTIyY2YwOTk4ZWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iNDQxNzRiYi0wZWYyLTQ0NDQtOGUzNi05MDJhOGFiZDkxNTkvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiNWM1ZTNlNy1jN2NkLTRhMDgtOTM0Mi1mYzIwMTYwZjlhMWQiLCJyaCI6IjAuQWFnQXUzUkJ0UElPUkVTT05wQXFpcjJSV1QzdmJabHNzMU5CaGdlbV9Ud0J1Sl96QUFBLiIsInJvbGVzIjpbIkF1dG9tYXRpb24uUmVhZFdyaXRlLkFsbCIsImFwcF9hY2Nlc3MiLCJBZG1pbkNlbnRlci5SZWFkV3JpdGUuQWxsIiwiQVBJLlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiYjVjNWUzZTctYzdjZC00YTA4LTkzNDItZmMyMDE2MGY5YTFkIiwidGlkIjoiYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5IiwidXRpIjoib3IyTzhlLTBVMGFkZ25qM3prY19BQSIsInZlciI6IjEuMCIsInhtc19pZHJlbCI6IjEwIDcifQ.n3blbQIH0m8j9WEPH2xkv76RNJDrR35O0Xb8IeGISXrm6LWEsYvTHs-2fjmdBtQn0s_OHhvJKJ2c_cPJeLB39mKxQNjvrpOsRu94D33ZKFsxKegovpiRMA0uYOHhId2dOPj-sIUv2zBKglh7nwNIRFyIbVnJK_-9TYMfj9cX3_bpm1RwvNpBK8Ps0KDdsZbxtCsZEYUO9hXAdQWkD5lqAhq175tAt_z7gwYSoCoO4_I0WiY396xwj7igIw8dXkYVsUxYA4px_D3TdsPQuavQWEmr-3HvEe_C_AcnNGmULa1hGo7QF6oxT0T5w05Wj0tUrD5ZNHnDWygKUFYICV8UUQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "id",
+							"value": "request/dfd671d6-dbde-411e-858b-c90d08b4a95f/39542dc9-7a93-4052-8d59-c66b68a3d849",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/microsoft/runtime/beta/companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)/webhookSupportedResources",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"microsoft",
+						"runtime",
+						"beta",
+						"companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)",
+						"webhookSupportedResources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales Orders",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCIsImtpZCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5LyIsImlhdCI6MTcxODExMzgzOCwibmJmIjoxNzE4MTEzODM4LCJleHAiOjE3MTgxMTc3MzgsImFpbyI6IkUyZGdZRGpjbWJwVmhjMzNadlRSbE9rYkEyTzdBQT09IiwiYXBwaWQiOiJhZDg5MmZjZC1iZmNiLTQyNDMtOTUwZS04ZTIyY2YwOTk4ZWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iNDQxNzRiYi0wZWYyLTQ0NDQtOGUzNi05MDJhOGFiZDkxNTkvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiNWM1ZTNlNy1jN2NkLTRhMDgtOTM0Mi1mYzIwMTYwZjlhMWQiLCJyaCI6IjAuQWFnQXUzUkJ0UElPUkVTT05wQXFpcjJSV1QzdmJabHNzMU5CaGdlbV9Ud0J1Sl96QUFBLiIsInJvbGVzIjpbIkF1dG9tYXRpb24uUmVhZFdyaXRlLkFsbCIsImFwcF9hY2Nlc3MiLCJBZG1pbkNlbnRlci5SZWFkV3JpdGUuQWxsIiwiQVBJLlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiYjVjNWUzZTctYzdjZC00YTA4LTkzNDItZmMyMDE2MGY5YTFkIiwidGlkIjoiYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5IiwidXRpIjoib3IyTzhlLTBVMGFkZ25qM3prY19BQSIsInZlciI6IjEuMCIsInhtc19pZHJlbCI6IjEwIDcifQ.n3blbQIH0m8j9WEPH2xkv76RNJDrR35O0Xb8IeGISXrm6LWEsYvTHs-2fjmdBtQn0s_OHhvJKJ2c_cPJeLB39mKxQNjvrpOsRu94D33ZKFsxKegovpiRMA0uYOHhId2dOPj-sIUv2zBKglh7nwNIRFyIbVnJK_-9TYMfj9cX3_bpm1RwvNpBK8Ps0KDdsZbxtCsZEYUO9hXAdQWkD5lqAhq175tAt_z7gwYSoCoO4_I0WiY396xwj7igIw8dXkYVsUxYA4px_D3TdsPQuavQWEmr-3HvEe_C_AcnNGmULa1hGo7QF6oxT0T5w05Wj0tUrD5ZNHnDWygKUFYICV8UUQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "id",
+							"value": "request/6d1a0470-2f12-4799-b161-165a786658e8/39542dc9-7a93-4052-8d59-c66b68a3d849",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)/salesOrders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)",
+						"salesOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Subscription",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "*"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"notificationUrl\": \"notification url\",\r\n  \"resource\": \"https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)/salesOrders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/subscriptions('00dafd7edd6948fd97a66a7f0429bd6d')",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"subscriptions('00dafd7edd6948fd97a66a7f0429bd6d')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Subscription",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"notificationUrl\": \"notification url\",\r\n  \"resource\": \"https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/companies(d0d0d64f-5be6-ee11-a201-6045bdc89dad)/salesOrders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/subscriptions('00dafd7edd6948fd97a66a7f0429bd6d')",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"subscriptions('00dafd7edd6948fd97a66a7f0429bd6d')"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

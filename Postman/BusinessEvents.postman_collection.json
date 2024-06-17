@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "1f77d44a-7aae-4782-bbab-e90b3be97772",
+		"name": "BusinessEvents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5384484"
+	},
+	"item": [
+		{
+			"name": "Delete BusinessEvent Subscription",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "*"
+					}
+				],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/externaleventsubscriptions(d013d1db-f508-4880-9c42-7aa934030eab)",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"externaleventsubscriptions(d013d1db-f508-4880-9c42-7aa934030eab)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Available BusinessEvents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCIsImtpZCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5LyIsImlhdCI6MTcxODExODY3OCwibmJmIjoxNzE4MTE4Njc4LCJleHAiOjE3MTgxMjI1NzgsImFpbyI6IkUyZGdZT2pMWVNtT1B4dlM4Y3RsQjd2SytVY2lBQT09IiwiYXBwaWQiOiJhZDg5MmZjZC1iZmNiLTQyNDMtOTUwZS04ZTIyY2YwOTk4ZWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iNDQxNzRiYi0wZWYyLTQ0NDQtOGUzNi05MDJhOGFiZDkxNTkvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiNWM1ZTNlNy1jN2NkLTRhMDgtOTM0Mi1mYzIwMTYwZjlhMWQiLCJyaCI6IjAuQWFnQXUzUkJ0UElPUkVTT05wQXFpcjJSV1QzdmJabHNzMU5CaGdlbV9Ud0J1Sl96QUFBLiIsInJvbGVzIjpbIkF1dG9tYXRpb24uUmVhZFdyaXRlLkFsbCIsImFwcF9hY2Nlc3MiLCJBZG1pbkNlbnRlci5SZWFkV3JpdGUuQWxsIiwiQVBJLlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiYjVjNWUzZTctYzdjZC00YTA4LTkzNDItZmMyMDE2MGY5YTFkIiwidGlkIjoiYjQ0MTc0YmItMGVmMi00NDQ0LThlMzYtOTAyYThhYmQ5MTU5IiwidXRpIjoiT1lXTlpuRXByMGVVeTg4QVlMVXpBQSIsInZlciI6IjEuMCIsInhtc19pZHJlbCI6IjcgMTYifQ.GaxNfB2owVQAAGvarpFH_fJZY7r_ZSjxHkcwZ3NbSvkDDI8QAdg8jsvMxBUUmoEw83Egx8pbOI8E4Gdk9xwiJNdT0YI6QXwEVYfMKn-BzDNAkskcU7z2iB8NEaPtru0Hc5EtBWhAM9L3OSU0kGs1jS3yDO2TS3eJQGf7pFQM1fD_EoDgwg8_IDOxDaBXCEnBSSL13sDrvSgakL6RR8TDWJW3KA8E-w0NHE4fbuijxinolI523femkTw4UwLaP7GCgFdwAP5v2xAy97322jY4XUvP2HNIQXgwrKtJ5bXRKa8Ael84eVfRh9Iwdgg5ktjYt6Cy7dBKrIk2ChoKXTnzyg",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "refresh_token",
+							"type": "any"
+						},
+						{
+							"key": "expires_in",
+							"value": 3599,
+							"type": "number"
+						},
+						{
+							"key": "token_id",
+							"value": "01579fa2-845f-40ad-9039-90d137160821",
+							"type": "string"
+						},
+						{
+							"key": "timestamp",
+							"value": 1718118982993,
+							"type": "number"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "id",
+							"value": "request/4ae30aa9-7468-4490-83f3-28556146dc98/39542dc9-7a93-4052-8d59-c66b68a3d849",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"appId\": \"89d4f70d-48ff-48e3-b452-2339202a672d\",\r\n  \"eventName\": \"VehicleLoaned\",\r\n  \"companyId\": \"\",\r\n  \"notificationUrl\": \"notification url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/microsoft/runtime/v2.0/externalbusinesseventdefinitions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"microsoft",
+						"runtime",
+						"v2.0",
+						"externalbusinesseventdefinitions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessEvent Subscriptions GET",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/externaleventsubscriptions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"externaleventsubscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessEvent Subscription POST",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "state",
+									"value": "random_state",
+									"enabled": false,
+									"send_as": "request_body"
+								},
+								{
+									"key": "expires_in",
+									"value": "28800",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.businesscentral.dynamics.com/.default",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ad892fcd-bfcb-4243-950e-8e22cf0998ea",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/b44174bb-0ef2-4444-8e36-902a8abd9159/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"appId\": \"6f2c034f-5ebe-4eae-b34c-90a0d4e87687\",\r\n  \"eventName\": \"SalesOrderReleased\",\r\n  \"notificationUrl\": \"notification url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.businesscentral.dynamics.com/v2.0/b44174bb-0ef2-4444-8e36-902a8abd9159/CommunityDCN/api/v2.0/externaleventsubscriptions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"businesscentral",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"v2.0",
+						"b44174bb-0ef2-4444-8e36-902a8abd9159",
+						"CommunityDCN",
+						"api",
+						"v2.0",
+						"externaleventsubscriptions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
